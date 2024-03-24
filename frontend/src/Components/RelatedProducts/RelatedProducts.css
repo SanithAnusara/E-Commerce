@@ -1,37 +1,38 @@
-.popular{
+.relatedproducts{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    max-width: 1280px;
-    margin: auto;
+    padding: 10px 0 100px;
 }
-.popular h1{
+.relatedproducts h1{
     color: #171717;
     font-size: 40px;
     font-weight: 600;
 }
-.popular hr{
+.relatedproducts hr{
     width: 150px;
     height: 4px;
     border-radius: 10px;
     background: #252525;
 }
-.popular-item{
-    margin-top: 40px;
+.relatedproducts-item{
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
     justify-content: center;
+    gap: 30px;
+    max-width: 1280px;
 }
-/* ---------- media query------------ */
 
-@media(max-width: 800px){
-    .popular h1{
+
+@media(max-width:600px){
+   
+    .relatedproducts h1{
         font-size: 30px;
     }
-    .popular hr{
-        width: 80px;
+    .relatedproducts hr{
+        width: 100px;
         height: 4px;
         
     }

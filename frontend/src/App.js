@@ -12,7 +12,6 @@ import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kid_banner from './Components/Assets/banner_kids.png'
 
-
 function App() {
   return (
     <div>
@@ -30,7 +29,7 @@ function App() {
         <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
       <Footer/>
-      </BrowserRouter> 
+      </BrowserRouter>
     </div>
   );
 }
