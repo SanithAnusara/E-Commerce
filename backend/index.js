@@ -17,6 +17,7 @@ mongoose.connect("mongodb+srv://Sanith20220700:20220700@cluster0.13ezfwk.mongodb
     ssl: true,
     sslValidate: false // Set to true if you want to validate the SSL certificate
   })
+  
 //API Creation
 
 app.get("/",(req,res)=>{
