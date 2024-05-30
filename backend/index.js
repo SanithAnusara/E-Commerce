@@ -11,13 +11,16 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://Sanith20220700:20220700@cluster0.13ezfwk.mongodb.net/e-commerce", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    ssl: true,
-    sslValidate: false // Set to true if you want to validate the SSL certificate
-  })
-  
+mongoose.connect("mongodb+srv://Sanith20220700:20220700@cluster0.13ezfwk.mongodb.net/e-commerce")
+
+.then(() => {
+    console.log('Connected to MongoDB');
+})
+.catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+});
+
+
 //API Creation
 
 app.get("/",(req,res)=>{
